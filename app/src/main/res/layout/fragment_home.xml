@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity"
+
+
+
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+       <androidx.appcompat.widget.Toolbar
+           android:id="@+id/toolbar_home"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           app:menu="@menu/menu"
+
+
+
+           >
+
+           <ImageView
+               android:id="@+id/items_back_tb"
+               android:layout_width="24dp"
+               android:layout_height="match_parent"
+               android:layout_marginRight="8dp"
+              android:scaleX="-1"
+               android:background="@drawable/ic_baseline_sort_24"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Company"
+               android:textSize="24sp"
+               android:layout_marginRight="10dp"
+               android:layout_gravity="center_vertical"
+               android:textStyle="bold"
+
+               android:textColor="@android:color/black"
+               />
+
+       </androidx.appcompat.widget.Toolbar>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+
+                android:layout_margin="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discover"
+                android:textStyle="bold"
+                android:textSize="19sp"
+                android:textColor="@android:color/black"
+                />
+
+            <Button
+
+                android:id="@+id/see_all_discover_btn"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="220dp"
+                android:background="@drawable/button_back_shap1"
+                android:layout_width="55dp"
+                android:layout_height="22dp"
+                android:text="See All"
+                android:padding="3dp"
+                android:textSize="12sp"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/discover_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            />
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="12dp"
+
+            >
+
+            <com.flaviofaria.kenburnsview.KenBurnsView
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:src="@drawable/offre_image"
+
+                />
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+
+                android:layout_margin="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Previous Orders"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="@android:color/black"
+                />
+
+            <Button
+                android:id="@+id/see_all_prev_orders_btn"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="170dp"
+                android:background="@drawable/button_back_shap1"
+                android:layout_width="55dp"
+                android:layout_height="22dp"
+                android:text="See All"
+                android:padding="3dp"
+                android:textSize="12sp"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                />
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/prev_orders_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            />
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="12dp"
+
+            >
+
+            <com.flaviofaria.kenburnsview.KenBurnsView
+                android:id="@+id/prev_orders_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:src="@drawable/offre_image"
+
+                />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>
+
